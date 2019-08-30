@@ -1,0 +1,42 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"18 ./define.h
+[; ;./define.h: 18:     {
+[s S2 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2 . CS0 CS1 CS2 CS3 CS4 CS5 CS6 CS7 ]
+"15
+[; ;./define.h: 15: {
+[u S1 `ui 1 `S2 1 ]
+[n S1 . full_status . ]
+"4 ./define.h
+[; ;./define.h: 4: uint8_t rxData;
+[v _rxData `uc ~T0 @X0 1 e ]
+"5
+[; ;./define.h: 5: uint8_t prcData;
+[v _prcData `uc ~T0 @X0 1 e ]
+"6
+[; ;./define.h: 6: _Bool config_status;
+[v _config_status `a ~T0 @X0 1 e ]
+"7
+[; ;./define.h: 7: _Bool check_request;
+[v _check_request `a ~T0 @X0 1 e ]
+"8
+[; ;./define.h: 8: uint16_t count_conf;
+[v _count_conf `us ~T0 @X0 1 e ]
+"9
+[; ;./define.h: 9: _Bool blink;
+[v _blink `a ~T0 @X0 1 e ]
+"10
+[; ;./define.h: 10: uint8_t blink_count;
+[v _blink_count `uc ~T0 @X0 1 e ]
+"11
+[; ;./define.h: 11: uint32_t timeout_count;
+[v _timeout_count `ul ~T0 @X0 1 e ]
+"12
+[; ;./define.h: 12: _Bool update_state_flag = 0;
+[v _update_state_flag `a ~T0 @X0 1 e ]
+[i _update_state_flag
+-> -> 0 `i `a
+]
+"28
+[; ;./define.h: 28: }last_touch_status;
+[v _last_touch_status `S1 ~T0 @X0 1 e ]
